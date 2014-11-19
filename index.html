@@ -15,20 +15,29 @@
 			if ( place.indexOf(',')>-1){
 				var url = place.replace(/\s+/g, '').replace(/,/g, '_').toLowerCase();
 				url = url.substr(0,2) + '_vers_' + url.substring(2);				
-				e.location.hash ='#' + url;
 			} else {
 				var url = place.replace(/\s+/g, '').toLowerCase();
 				url = url.substr(0,2) + '_lj_' + url.substring(2);
-				k.location.hash ='#' + url;
 			}
+			if ( document.getElementById('k').contentDocument.getElementsByName( url ).length>0 ){
+				k.location.hash ='#' + url;				
+			} else {
+				alert( "Sajnos a keresett kifejezés nem található. Próbálja meg újra! Versre ugrás formátuma: 'Lk 9,16' Kommentárra ugrás formátuma: 'Lk356'")
+			}
+
 			
 		}
 		
+		function pressEnter( event, place ){
+			if ( event.keyCode == 13 ){
+				goHere(place);
+			}
+		}
 		</script>
 	</head>
 	<body>
 
-		<div id="navigate">Ugrás erre a pontra: <input type="text" id="q" title="Versre ugrás formátuma: 'Lk 9,16' Kommentárra ugrás formátuma: 'Lk356'"><input type="submit" onclick="goHere(document.getElementById('q').value);" value="ok">&nbsp;|&nbsp;<a href="javascript:history.back()">Ugrás vissza</a>&nbsp;|&nbsp;<a href="m.html#top" target="k">Alsó blokk tetejére</a></div>
+		<div id="navigate">Ugrás erre a pontra: <input type="text" id="q" title="Versre ugrás formátuma: 'Lk 9,16' Kommentárra ugrás formátuma: 'Lk356'" onkeypress="return pressEnter(event,document.getElementById('q').value)"><input type="submit" onclick="goHere(document.getElementById('q').value);" value="ok">&nbsp;|&nbsp;<a href="javascript:history.back()">Ugrás vissza</a>&nbsp;|&nbsp;<a href="m.html#top" target="k">Alsó blokk tetejére</a></div>
 		<a name="top"></a>
 		<iframe style="height:50%;min-height:300px;border-bottom:2px solid #c2c2c2;border-width:0 0 2px 0;padding:0 0 10px 0" width="100%" border="0" src="evangelium.html" name="e"></iframe>
 		<iframe id="k" style="heigth:50%;min-height:300px;border-width:0;padding:10px 0 0 0" width="100%" border="0" src="m.html" name="k"></iframe>

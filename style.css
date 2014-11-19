@@ -114,7 +114,7 @@
 		}
 
 		/* Labjegyzet sorszáma */
-		span.labjegyzet {
+		small {
 			font-weight: bold;
 			font-size: 9pt;
 			color: #888888;
