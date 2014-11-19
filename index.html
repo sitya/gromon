@@ -33,13 +33,21 @@
 				goHere(place);
 			}
 		}
+		
+		function setIframeHeight(){
+			var height = window.innerHeight || document.body.clientHeight
+				document.getElementById("e").height = height/2 + "px";
+				document.getElementById("k").height = height/2-10 + "px";
+		}
+			
+		
 		</script>
 	</head>
-	<body>
+	<body onload="setIframeHeight()">
 
 		<div id="navigate">Ugrás erre a pontra: <input type="text" id="q" title="Versre ugrás formátuma: 'Lk 9,16' Kommentárra ugrás formátuma: 'Lk356'" onkeypress="return pressEnter(event,document.getElementById('q').value)"><input type="submit" onclick="goHere(document.getElementById('q').value);" value="ok">&nbsp;|&nbsp;<a href="javascript:history.back()">Ugrás vissza</a>&nbsp;|&nbsp;<a href="m.html#top" target="k">Alsó blokk tetejére</a></div>
 		<a name="top"></a>
-		<iframe style="height:50%;min-height:300px;border-bottom:2px solid #c2c2c2;border-width:0 0 2px 0;padding:0 0 10px 0" width="100%" border="0" src="evangelium.html" name="e"></iframe>
-		<iframe id="k" style="heigth:50%;min-height:300px;border-width:0;padding:10px 0 0 0" width="100%" border="0" src="m.html" name="k"></iframe>
+		<iframe id="e" style="border-bottom:2px solid #c2c2c2;border-width:0 0 2px 0;padding:0 0 10px 0" width="100%" border="0" src="evangelium.html" name="e"></iframe>
+		<iframe id="k" style="border-width:0;padding:10px 0 0 0" width="100%" border="0" src="m.html" name="k"></iframe>
 	</body>
 </html>
