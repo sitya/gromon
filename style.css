@@ -1,0 +1,144 @@
+		/* Szövegtörzs */
+		body {
+		    background-color: #ffffff;
+		    font-size: 12pt;
+			color: #000;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* Szövegek */
+		 div {
+		    text-align: justify;
+			/*width: 800px;*/
+			padding: 15px;
+		}
+
+		/* Cím a leíráshoz */
+		div.cim {
+		    text-align: center;
+			padding: 15px;
+			color: #000;
+			font-weight: bold;
+		}
+
+		/* Leírás */
+		div.leiras {
+		    text-align: justify;
+			padding: 15px;
+			color: #000;
+		}
+
+		/* Leírás végjegyzete */
+		div.vegjegyzet {
+		    text-align: justify;
+			padding: 15px;
+			color: #000;
+			font-size: 9pt;
+		}
+
+		/* Leírás végén aláírás */
+		div.alairas {
+		    text-align: right;
+			color: #333333;
+			font-style: italic;
+		}
+
+		/* Lukács-evangélium szövege */
+		div.lk {
+		    color: #600000;
+		}
+
+		/* Márk-evangélium szövege */
+		div.mk {
+		    color: #006000;
+		}
+
+		/* Máté-evangélium szövege */
+		div.mt {
+		    color: #000060;
+		}
+
+		/* Lukács-kommentár szövege */
+		div.lk_lj {
+		    color: #606000;
+		}
+
+		/* Márk-kommentár szövege */
+		div.mk_lj {
+		    color: #006060;
+		}
+
+		/* Máté-kommentár szövege */
+		div.mt_lj {
+		    color: #600060;
+		}
+
+		/* Bevezető szövege */
+		div.bevezeto {
+		    color: #000;
+		}
+
+		/* Hibaüzenet szövege */
+		div.hiba {
+		    color: #ff0000;
+			font-weight: bold;
+		}
+
+		/* Bekezdés */
+		p {
+		    font-family: "Times New Roman";
+			margin:0;
+			padding: 2px 0;
+		}
+
+		/* Hivatkozás */
+		a {
+			text-decoration: none;
+			font-weight: bolder;
+			color: #000;
+		}
+
+
+		/* Fejezet száma */
+		span.fejezet {
+			font-weight: bold;
+			font-size: 16pt;
+		}
+
+		/* Vers száma */
+		 span.vers {
+			font-weight: bold;
+			font-size: 9pt;
+			color: #888888;
+		}
+
+		/* Labjegyzet sorszáma */
+		span.labjegyzet {
+			font-weight: bold;
+			font-size: 9pt;
+			color: #888888;
+			font-family: "Monospace";
+		}
+		
+		#navigate {
+			position: fixed;
+			bottom: 10px;
+			right: 10px;
+			background-color: #d2d2d2;
+			z-index: 1000;
+			opacity: 0.8;
+			border: 1px solid #000;
+			padding: 12px 20px;
+		}
+		
+		#navigate a {
+			color: #000;
+			font-weight: bold;
+		}
+		
+		a sup {
+			color: #000;
+			font-size: 10px;
+		}
+		
