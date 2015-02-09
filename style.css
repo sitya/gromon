@@ -46,32 +46,32 @@
 
 		/* Lukács-evangélium szövege */
 		div.lk {
-		    color: #600000;
+		    color: #970303;
 		}
 
 		/* Márk-evangélium szövege */
 		div.mk {
-		    color: #006000;
+		    color: #177202;
 		}
 
 		/* Máté-evangélium szövege */
 		div.mt {
-		    color: #000060;
+		    color: #020880;
 		}
 
 		/* Lukács-kommentár szövege */
 		div.lk_lj {
-		    color: #606000;
+		    color: #DE0404;
 		}
 
 		/* Márk-kommentár szövege */
 		div.mk_lj {
-		    color: #006060;
+		    color: #23AD03;
 		}
 
 		/* Máté-kommentár szövege */
 		div.mt_lj {
-		    color: #600060;
+		    color: #030DCD;
 		}
 
 		/* Bevezető szövege */
