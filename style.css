@@ -126,7 +126,7 @@
 		#navigate {
 			position: fixed;
 			bottom: 10px;
-			right: 10px;
+			right: 20px;
 			background-color: #d2d2d2;
 			z-index: 1000;
 			opacity: 0.8;
